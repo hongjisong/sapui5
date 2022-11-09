@@ -102,7 +102,7 @@ sap.ui.define([
             userDetailInit: function(){
                 let that = this;
                 let oView = this.getView();
-                sap.ui.require(["com.myorg.myUI5App.controller/ResultDetail.controller"],
+                sap.ui.require(["com.myorg.myUI5App/controller/ResultDetail.controller"],
                   function(Controller){
                       let ChangeController = new Controller();
 

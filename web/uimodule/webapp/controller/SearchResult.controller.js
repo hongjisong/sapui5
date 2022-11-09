@@ -24,6 +24,10 @@ sap.ui.define([
      },
 
   onPress: function(oEvent){
+    let mainView = this._oView;
+    let splitAppView = mainView.byId("SplitApp");
+    // page 이동
+    splitAppView.to(mainView.createId("detailDetail"));
     // 선택한 data를 다 array 보관하고 싶을때
     let arr = [] ;
     oEvent.getParameter("listItem").getCells().forEach(cell =>{
@@ -33,9 +37,6 @@ sap.ui.define([
     // 선택한 data의 index만 알고 싶을때
     let pushIndex;
     pushIndex = oEvent.getParameter("listItem").getBindingContextPath().split("/")[2];
-    // page 이동
-    let oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-    oRouter.navTo("RouteView2");
   }
 
     })

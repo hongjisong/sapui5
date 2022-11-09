@@ -17,8 +17,8 @@
 							<Label text="ID" width="100px" design="Bold"
 								required="true" />
 							<ComboBox id="ID" 
-								 items="{ak>id}"
-								 required="true" valueState="None" change="onID">
+								items="{ak>id}"
+								required="true" valueState="None" change="onID">
 								<core:Item key="{ak>id}" text="{ak>id}" />
 							</ComboBox>
 						</f:fields>
@@ -41,8 +41,8 @@
 							<Label text="Given Name" width="100px" design="Bold"
 								required="true" />
 							<ComboBox id="GivenName" 
-								 items="{ak>name/givenName}" 
-								 required="true" valueState="None" change="onFrist">
+								items="{ak>name/givenName}" 
+								required="true" valueState="None" change="onFrist">
 								<core:Item key="{ak>name/givenName}" text="{ak>name/givenName}" />
 							</ComboBox>
 						</f:fields>
