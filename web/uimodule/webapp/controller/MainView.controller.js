@@ -102,7 +102,7 @@ sap.ui.define([
             userDetailInit: function(){
                 let that = this;
                 let oView = this.getView();
-                sap.ui.require(["com.myorg.myUI5App/controller/ResultDetail.controller"],
+                sap.ui.require(["com/myorg/myUI5App/controller/ResultDetail.controller"],
                   function(Controller){
                       let ChangeController = new Controller();
 
@@ -122,7 +122,7 @@ sap.ui.define([
             userSearchInit: function(){
                 let that = this;
                 let oView = this.getView();
-                sap.ui.require(["com.myorg.myUI5App/controller/Search.controller"],
+                sap.ui.require(["com/myorg/myUI5App/controller/Search.controller"],
                 function(Controller){
                   let SearchController = new Controller();
                   Fragment.load({
@@ -138,7 +138,7 @@ sap.ui.define([
             userSearchResultInit: function(){
               let that = this;
               let oView = this.getView();
-              sap.ui.require(["com.myorg.myUI5App/controller/SearchResult.controller"],
+              sap.ui.require(["com/myorg/myUI5App/controller/SearchResult.controller"],
               function(Controller){
                 let SearchController = new Controller();
                 Fragment.load({
