@@ -1,0 +1,55 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:t="sap.ui.table"
+	displayBlock="true" xmlns:f="sap.ui.layout.form" >
+
+	<f:Form editable="false" id="DetailContent">
+                <f:layout>
+                    <f:ResponsiveGridLayout labelSpanXL="4"
+                        labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false"
+                        emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+                        columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false" />
+                </f:layout>                
+                <f:formContainers>
+                    <f:FormContainer id="firstFormData">
+                        <f:formElements>
+                            <f:FormElement label="ID">
+                                <f:fields>
+                                    <Input value="{ak>id}" />
+                                </f:fields>
+                            </f:FormElement>
+                            <f:FormElement label="userName">
+                                <f:fields>
+                                    <Input value="{ak>userName}"/>
+                                </f:fields>
+                            </f:FormElement>
+                            <f:FormElement label="givenName">
+                                <f:fields>
+                                    <Input value="{ak>name/givenName}" />
+                                </f:fields>
+                            </f:FormElement>
+                            <f:FormElement label="familyName">
+                                <f:fields>
+                                    <Input value="{ak>name/familyName}" />
+                                </f:fields>
+                            </f:FormElement>
+                            <f:FormElement label="emails">
+                                <f:fields>
+                                    <Input value="{ak>emails/0/value}" />
+                                </f:fields>
+                            </f:FormElement>
+                            <f:FormElement label="groups">
+                                <f:fields>
+                                    <Input value="{ak>groups/0/value}"/>
+                                </f:fields>
+                            </f:FormElement>
+                            <f:FormElement label="zoneId">
+                                <f:fields>
+                                    <Input value="{ak>zoneId}"/>
+                                </f:fields>
+                            </f:FormElement>
+                        </f:formElements>
+                    </f:FormContainer>
+                </f:formContainers>
+            </f:Form>
+
+</core:FragmentDefinition>

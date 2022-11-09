@@ -1,0 +1,40 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:t="sap.ui.table"
+	displayBlock="true">
+	
+  <Table id="mainTable" inset="false" items="{ak>/UserInfo}" itemPress="onPress">                
+    <columns>
+        <Column hAlign="Center">
+            <Text text="ID"/>
+        </Column>
+        <Column>
+            <Text text="E-mail"/>
+        </Column>
+        <Column hAlign="Center">
+            <Text text="Given Name"/>
+        </Column>
+        <Column hAlign="Center">
+            <Text text="Family Name"/>
+        </Column>
+        <Column hAlign="Center">
+            <Text text="Groups"/>
+        </Column>
+        <Column hAlign="Center">
+            <Text text="Zone ID"/>
+        </Column>
+    </columns>
+    <items>
+        <ColumnListItem type="Navigation">
+            <cells>
+                <Text text="{ak>id}"/>
+                <Text text="{ak>emails/0/value}"/>
+                <Text text="{ak>name/givenName}"/>
+                <Text text="{ak>name/familyName}"/>
+                <Text text="{ak>groups/0/value}"/>
+                <Text text="{ak>zoneId}"/>
+            </cells>
+        </ColumnListItem>
+    </items>
+</Table> 
+
+</core:FragmentDefinition>

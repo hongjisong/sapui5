@@ -1,0 +1,27 @@
+<mvc:View controllerName="com.myorg.myUI5App.controller.MainView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <SplitApp id="SplitAppDemo" initialDetail="detail"
+    initialMaster="master" >
+    <detailPages>
+        <Page id="detail" title="검색결과" backgroundDesign="Solid">
+            <headerContent>
+                <Button text="검색" press="onSearch"></Button>                
+            </headerContent>
+        </Page>
+        <Page id="detailDetail" title="상세 정보" backgroundDesign="Solid">
+            <headerContent>                
+                <Button text="수정" press="onChange"></Button>
+                <Button text="생성" press="onCreate"></Button>
+            </headerContent>
+        </Page>
+    </detailPages>
+
+    <masterPages>
+        <Page id="master" title="검색 조건"
+            showNavButton="true" navButtonPress=".onPressDetailBack">
+        </Page>
+        <Page id="master2" title="검색 결과" backgroundDesign="List"
+            showNavButton="true" navButtonPress=".onPressDetailBack">
+        </Page>
+    </masterPages>
+</SplitApp>
+</mvc:View>
